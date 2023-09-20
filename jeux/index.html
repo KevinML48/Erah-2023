@@ -1,107 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="/assets/logo-erah.png" type="image/x-icon">
-	<title>Erah - Jeux</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erah - Jeux</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 
-	<link rel="stylesheet" href="css/main.css">
-	<script src="js/app.js" defer></script>
+    <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
+  <link rel="shortcut icon" href="/assets/logo-erah.png" type="image/x-icon">
+  <!-- or -->
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="../Images/logo-erah-sans-fond.png" type="image/x-icon">
+
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 <body>
 
-	<div class="container">
-		<section class="gallery">
+    <section class="home">
+        <div class="home-img animate__animated animate__bounceInDown">
+            <img src="/assets/rocket-league.png" class="one">
+        </div>
+        <div class="home-text">
+            <h1>Bienvenue dans <br>l'univers d'Erah</h1>
+            <h5>Découvrez les différents jeux où Erah excelle.</h5>
+            <a href="/postuler/index.html" class="btn">Postuler</a>
+        </div>
+    </section>
 
-			<div class="frame">
-				<div class="frame__content">
-					<h2>Erah - Jeux</h2>
-				</div>
-			</div>
+    <div class="main">
+        <div class="row">
+            <li><img src="/assets/rocket-league-petit.png" onclick="slider('/assets/rocket-league.png')"></li>
+        </div>
 
-			<div class="frame">
-				<div class="frame__content">
-					<div class="frame-media frame-media_left" style="background-image: url(/assets/esport.png)"></div>
-				</div>
-			</div>
+        <div class="row row2">
+            <li><img src="/assets/point-dinterrogation-petit.png" onclick="slider('/assets/point-dinterrogation.png')"></li>
+        </div>
 
-			<div class="frame frame_bg">
-				<div class="frame__content">
-					<video class="frame-media frame-media_right" src="media/trailer-2.mkv" autoplay loop muted></video>
-				</div>
-			</div>
-
-			<div class="frame"></div>
-
-			<div class="frame">
-				<div class="frame__content text-right">
-					<h3>Erah s'engage</h3>
-					<p>On souhaite vous proposer la pépite du jeux compétitif pour vous donner une chance de soutenir une équipe qui en vaut le coup !</p>
-				</div>
-			</div>
-
-			<div class="frame frame_bg">
-				<div class="frame__content">
-					<div class="frame-media frame-media_left" style="background-image: url(/assets/logo-erah.png)"></div>
-				</div>
-			</div>
-
-			<div class="frame"></div>
-
-			<div class="frame frame_bg">
-				<div class="frame__content">
-					<div class="frame-media frame-media_right" style="background-image: url(https://i.ytimg.com/vi/yrQ-Y-1bQok/maxresdefault.jpg)"></div>
-				</div>
-			</div>
-
-			<div class="frame"></div>
-
-			<div class="frame">
-				<div class="frame__content text-left">
-					<h3>Explorer de nouveau terrains</h3>
-					<p>Vous offrir la chance de performer sur le jeux que vous adorez !</p>
-				</div>
-			</div>
-
-			<div class="frame frame_bg">
-				<div class="frame__content">
-					<div class="frame-media frame-media_right" style="background-image: url(https://i.ytimg.com/vi/HYYzn2NDYyI/maxresdefault.jpg)"></div>
-				</div>
-			</div>
-
-			<div class="frame">
-				<div class="frame__content">
-					<video class="frame-media frame-media_left" src="media/trailer-3.mkv" autoplay loop muted></video>
-				</div>
-			</div>
-
-			<div class="frame"></div>
-			<div class="frame"></div>
-
-			<div class="frame frame_bg">
-				<div class="frame__content">
-					<div class="frame-media frame-media_right" style="background-image: url(https://th.bing.com/th/id/OIP.wcck9_ULAYo__1I-NoblrwHaEK?pid=ImgDet&rs=1)"></div>
-				</div>
-			</div>
-
-			<div class="frame frame_bg">
-				<div class="frame__content">
-					<video class="frame-media" src="media/Annonce - ERAH.mkv" autoplay loop muted></video>
-				</div>
-			</div>
-
-			<div class="frame"></div>
-			<div class="frame"></div>
-
-			<div class="frame">
-				<div class="frame__content">© Erah - Association</div>
-			</div>
-
-		</section>
-	</div>
+        <div class="row row3">
+            <li><img src="/assets/point-dinterrogation-petit.png" onclick="slider('/assets/point-dinterrogation.png')"></li>
+        </div>
+    </div>
+    
+    <a href="/index.html" class="bottom"> Retour a l'accueil <i class='bx bxs-home-alt-2'></i></a>
+    
+    <script type="text/javascript">
+        function slider(anything) {
+            document.querySelector('.one').src = anything;
+        };
+    </script>
 
 </body>
 </html>
