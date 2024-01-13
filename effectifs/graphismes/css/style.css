@@ -64,7 +64,7 @@ a.button {
 }
 a.button:hover {
   color: #fff;
-  background-color: #ff0000;
+  background-color: rgb(255, 0, 0);
 }
 
 /* swiper button css */
