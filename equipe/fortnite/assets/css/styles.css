@@ -7,10 +7,10 @@
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(34, 52%, 54%);
-  --first-color-light: hsl(34, 52%, 64%);
-  --first-color-lighten: hsl(34, 52%, 68%);
-  --black-color: hsl(0, 0%, 4%);
+  --first-color: hsl(2, 95%, 14%);
+  --first-color-light: hsl(4, 88%, 27%);
+  --first-color-lighten: hsl(0, 100%, 50%);
+  --black-color: hsl(0, 0%, 100%);
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -395,3 +395,10 @@ img {
     background-color: hsl(0, 0%, 65%);
   }
 }
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: font-size 0.3s ease; 
+}
+
