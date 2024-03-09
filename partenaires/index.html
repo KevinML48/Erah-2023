@@ -1,47 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ERAH | Partenaires</title>
-    <link rel="shortcut icon" href="/image/assets/ERAH_Logo_sans_texte.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>
-        Nos Partenaires
-    </h1>
-    <div class="section-fluid-main">
-		<div class="section-row">
-			<div class="section-col">
-				<div class="section">
-					<div class="section-in">
-                        <a href="https://www.amazon.fr/b?_encoding=UTF8&tag=erah-21&linkCode=ur2&linkId=0afacc40b3f2dacc3a9f534c81ecb053&camp=1642&creative=6746&node=548026">
-						<img src="/image/images/maxresdefault-removebg-preview.png">
-                        </a>
-					</div>
-				</div>
-			</div>
-			<div class="hover-text">
-				<h2>Amazon</h2>
-			</div>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-			<div class="section-col">
-				<div class="section">
-					<div class="section-in">
-                        <a href="https://www.kapoli.fr/boutiquedesclubs/ERAH-ESPORT-c161663263">
-						    <img src="/image/images/1829028315-removebg-preview.png" alt="">
-                        </a>
-					</div>
-				</div>
-			</div>
-			<div class="hover-text">
-				<h2>Kapoli</h2>
-			</div>
-		</div>
-		<a href="/index.html" class="logo">
-			<img src="/image/assets/ERAH_Logo_sans_texte.png" alt="">
-		</a>	
-	</div>
-</body>
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="/image/assets/ERAH_Logo_sans_texte.png" type="image/x-icon">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+      <!--=============== SWIPER CSS ===============-->
+      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
+
+      <title>ERAH - Partenaires</title>
+   </head>
+   <body style="-webkit-user-select: none; 
+               -moz-user-select: none; 
+               -ms-user-select: none; 
+               user-select: none; ">
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="/index.html" class="nav__logo">NOS PARTENAIRES</a>
+         </nav>
+      </header>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home">
+            <div class="home__container container">
+               <div class="home__data">
+                  <div class="home__content">
+   
+                     <h1 class="home__title">   
+                        Ils nous <br> 
+                        accordent leur <br> 
+                        confiance
+                     </h1>
+   
+                     <h3 class="home__price">Nos Partenaires</h3>
+                  </div>
+
+                  <a href="/contact/contact.html" class="home__button">
+                     NOUS CONTACTER
+                     <i class="ri-arrow-right-s-line"></i>
+                  </a>
+               </div>
+
+               <div class="home__images">
+                  <div class="home__swiper swiper">
+                     <div class="swiper-wrapper">
+                        <article class="home__article swiper-slide">
+                           <img src="assets/625086036189ca10ae586675_Logo6-4-removebg-preview.png" alt="image" class="home__img">
+                           <h1 style="text-align: center;">
+                              Amazon
+                           </h1>
+                        </article>
+
+                        <article class="home__article swiper-slide">
+                           <img src="/image/images/kapoli.png" alt="image" class="home__img">
+                           <h1 style="text-align: center;">
+                              Kapoli
+                           </h1>
+                        </article>
+                     </div>
+                  </div>
+
+                  <!-- Pagination -->
+                  <div class="swiper-pagination"></div>
+               </div>
+
+               <div class="home__info">
+                  <img src="/image/assets/ERAH_Logo_sans_texte.png" alt="image" class="home__info-img">
+
+                  <div class="home__info-content">
+                     <p class="home__info-description">
+                        Notre objectif est de promouvoir, professionnaliser et renforcer la crédibilité de l'esport! Vous souhaitez apporter votre soutien à cette cause et progresser avec un projet prometteur? Contactez-nous !
+                     </p>
+
+                     <a href="https://twitter.com/ErahEsport" class="home__button-link" target="_blank">Nous suivre</a>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+
+      <!--=============== GSAP ===============-->
+      <script src="assets/js/gsap.min.js"></script>
+
+      <!--=============== SWIPER JS ===============-->
+      <script src="assets/js/swiper-bundle.min.js"></script>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+   </body>
 </html>
